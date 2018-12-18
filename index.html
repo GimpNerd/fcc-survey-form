@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="title">Survey Form!</h1>
+        <p id="description">Please take a moment to fill out this form.</p>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="John Smith" aria-describedby="helpId"
+                    required>
+                <small id="helpId" class="text-muted">Required</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">E-mail:</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="JohnSmith@gmail.com"
+                    aria-describedby="helpId" required>
+                <small id="helpId" class="text-muted">Required</small>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="number-label">Age:</label>
+                <input type="number" name="age" id="number" class="form-control" placeholder="18" aria-describedby="helpId"
+                    min="1" max="100" required>
+                <small id="helpId" class="text-muted">Required</small>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">What is your favorite programming language?</label>
+                <select id="dropdown" class="form-control">
+                    <option selected id="dropdown">Choose...</option>
+                    <option>C++</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="radioForm">How often do you code?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioForm" id="exampleRadios1" value="option1"
+                        checked>
+                    <label class="form-check-label" for="radioForm1">
+                        Everyday
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioForm" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="radioForm2">
+                        Once a week
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioForm" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="radioForm3">
+                        Once a month
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioForm" id="exampleRadios4" value="option4">
+                    <label class="form-check-label" for="radioForm4">
+                        Never
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="checkbox">What kind of projects do you like working on?</label>
+                <div class="form-check">
+                    <input class="form-check-input" name="checkbox" type="checkbox" value="check1" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Frontend Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="checkbox" type="checkbox" value="check2" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Backend Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="checkbox" type="checkbox" value="check3" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                        Open Source Community
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="checkbox" type="checkbox" value="check4" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck4">
+                        Data Visualization
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="checkbox" type="checkbox" value="check5" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck5">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Additional Comments:</label>
+                <textarea class="form-control" name="comment" rows="5" id="comment"></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
